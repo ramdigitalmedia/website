@@ -66,14 +66,16 @@
       <div class="card">
         <h3>Request a call</h3>
         <p style="font-size:.92rem;">Tell us a little about your project and preferred time &mdash; we&rsquo;ll confirm by email within one business day.</p>
-        <form data-lead-form>
+        <form data-lead-form name="strategy-call" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="strategy-call">
+          <p style="display:none;"><label>Don&rsquo;t fill this out: <input name="bot-field"></label></p>
           <div class="grid grid-2">
-            <div class="field"><label for="name">Full Name</label><input id="name" type="text" required></div>
-            <div class="field"><label for="email">Work Email</label><input id="email" type="email" required></div>
+            <div class="field"><label for="name">Full Name</label><input id="name" name="name" type="text" required></div>
+            <div class="field"><label for="email">Work Email</label><input id="email" name="email" type="email" required></div>
           </div>
           <div class="field">
             <label for="scope">Project Scope</label>
-            <select id="scope">
+            <select id="scope" name="scope">
               <option>Full Strategy</option>
               <option>Performance Marketing</option>
               <option>Web Design &amp; Development</option>
@@ -83,7 +85,7 @@
           </div>
           <div class="field">
             <label for="budget">Monthly Budget Range</label>
-            <select id="budget">
+            <select id="budget" name="budget">
               <option>&lt; $1k</option>
               <option>$1k &ndash; $5k</option>
               <option>$5k &ndash; $10k</option>
@@ -92,13 +94,13 @@
           </div>
           <div class="field">
             <label for="preferred">Preferred Time</label>
-            <select id="preferred">
+            <select id="preferred" name="preferred">
               <option>09:00</option>
               <option>10:30</option>
               <option>14:00</option>
             </select>
           </div>
-          <div class="field"><label for="notes">Anything else we should know?</label><textarea id="notes" placeholder="Current bottlenecks, goals, timeline..."></textarea></div>
+          <div class="field"><label for="notes">Anything else we should know?</label><textarea id="notes" name="notes" placeholder="Current bottlenecks, goals, timeline..."></textarea></div>
           <button type="submit" class="btn btn-primary btn-block">Confirm Booking &rarr;</button>
         </form>
       </div>
@@ -124,7 +126,7 @@
         <div class="card">
           <h3>Prefer email?</h3>
           <p style="font-size:.9rem;">Reach us directly and we&rsquo;ll route you to the right specialist.</p>
-          <a href="mailto:hello@ramdigital.io" class="btn btn-ghost btn-block">hello@ramdigital.io</a>
+          <a href="mailto:digitalmarketingnez@gmail.com" class="btn btn-ghost btn-block">digitalmarketingnez@gmail.com</a>
         </div>
       </div>
     </div>
@@ -161,7 +163,7 @@
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
-        <a href="mailto:hello@ramdigital.io">hello@ramdigital.io</a>
+        <a href="mailto:digitalmarketingnez@gmail.com">digitalmarketingnez@gmail.com</a>
         <a href="book-a-call.html">Book a Strategy Call</a>
       </div>
     </div>
