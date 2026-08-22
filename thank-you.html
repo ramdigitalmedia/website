@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You | RAM Digital</title>
+  <meta name="description" content="Thank you for contacting RAM Digital. Your strategy call request has been received.">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .thank-you-wrap{
+      min-height:75vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:80px 20px;
+    }
+    .thank-you-card{
+      width:min(720px,100%);
+      text-align:center;
+    }
+    .thank-you-icon{
+      width:76px;
+      height:76px;
+      margin:0 auto 24px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:2rem;
+      background:rgba(52,211,153,.12);
+      border:1px solid rgba(52,211,153,.3);
+    }
+    .thank-you-card p{
+      max-width:600px;
+      margin:18px auto;
+    }
+  </style>
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container nav-row">
+    <a href="index.html" class="brand">
+      <img src="images/logo-192.png" alt="RAM Digital logo">
+      RAM DIGITAL
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="case-studies.html">Case Studies</a>
+      <a href="blog.html">Blog</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="book-a-call.html" class="btn btn-primary btn-sm">Book a Strategy Call</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="blog.html">Blog</a>
+    <a href="faq.html">FAQ</a>
+    <a href="book-a-call.html" class="btn btn-primary">Book a Strategy Call</a>
+  </div>
+</header>
+
+<main class="thank-you-wrap">
+  <div class="card thank-you-card">
+    <div class="thank-you-icon">✓</div>
+
+    <span class="eyebrow">Request Received</span>
+
+    <h1 style="margin-top:14px;">
+      Thank You<span class="text-gradient">!</span>
+    </h1>
+
+    <p class="lede">
+      Your strategy call request has been received successfully.
+    </p>
+
+    <p>
+      We'll review your requirements and contact you at
+      <strong>hello.ramdigital@gmail.com</strong>.
+    </p>
+
+    <div style="margin-top:30px;">
+      <a href="index.html" class="btn btn-primary">Back to RAM Digital <span class="btn-arrow">→</span></a>
+      <a href="services.html" class="btn btn-ghost" style="margin-left:10px;">Explore Our Services</a>
+    </div>
+  </div>
+</main>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.querySelector('.mobile-menu');
+
+  if (toggle && menu) {
+    toggle.addEventListener('click', function () {
+      const open = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!open));
+      menu.classList.toggle('open', !open);
+    });
+  }
+});
+</script>
+</body>
+</html>
